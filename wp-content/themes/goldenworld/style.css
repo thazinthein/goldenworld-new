@@ -370,7 +370,31 @@ h2.section_header{
 }
 
 /************************TopMenu****************************/
-.navbar-header {
+
+.navbar-nav li a{
+  color:#fff!important;
+}
+
+.navbar{
+  
+  border:none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  color: #fff!important;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Cabin', Arial, sans-serif;
+  border-top: 1px solid #fff;
+  border-radius: 0;
+}
+
+.navbar-nav li ul li a{
+  color: #000 !important;
+  font-family: "Cabin",Arial,sans-serif;
+}
+
+/*.navbar-header {
     background: none repeat scroll 0 0 #efefef;
     min-width: 100%;
     display: block;
@@ -412,19 +436,24 @@ h2.section_header{
   padding: 1px;
 }
 
+.navbar li ul li a{
+  color: #000 !important;
+  font-family: "Cabin",Arial,sans-serif;
+}
+
 .navbar li a:link,.navbar li a:hover,.navbar li a:visited{
   text-decoration: none;
   outline: none;
-}
+}*/
 
-.navbar li ul{
-  display: none;
+/*.navbar li ul{
+  display: none;  
 }
 
 .navbar li:hover ul {
   display: block;
   /*margin-top: 10px;*/
-  position: absolute;
+ /* position: absolute;
   z-index: 20000; 
   height:auto;
   color: #000 !important;
@@ -438,7 +467,6 @@ h2.section_header{
   width: 240px;
   height:auto;
   position:absolute;
-  border-radius:10px;
   text-shadow:none;
 }
 
@@ -447,7 +475,7 @@ h2.section_header{
   font:14pt Tahoma,sans-serif;
   font-size:small;
   /*z-index: 20000;*/
-  line-height:30px;
+  /*line-height:30px;
   color: #999999;
   width: 220px;
   height: 30px;
@@ -460,6 +488,10 @@ h2.section_header{
   text-shadow:none;
   margin-left:0px;
 }
+
+.navbar li:hover ul li:last-child { 
+border-bottom:none;
+}/
 
 /************************TopMenu****************************/
 

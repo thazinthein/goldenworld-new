@@ -65,6 +65,7 @@ $woocommerce_loop['loop']++;
 			</div>
 		</div> -->
 		<?php do_action( 'woocommerce_after_subcategory', $category ); ?>
+		<div class="viewbtn"><a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">View All</a></div>
 
 	</li>
 

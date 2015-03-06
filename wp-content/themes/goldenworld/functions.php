@@ -492,4 +492,10 @@ class ik_walker extends Walker_Nav_Menu{
   }
 }
 
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'goldenworld' ),
+) );
+
 ?>

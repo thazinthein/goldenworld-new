@@ -79,16 +79,19 @@
 				                  <a class="navbar-brand" href="#">Menu</a>
 				                </div>
 				                <div class="navbar-collapse collapse" role="navigation">
-				                   	<?php 
-				                   		wp_nav_menu( array(
-											'container' => false, 
-											'menu_id' => 'nav', 
-											'depth' => 0,
-											'theme_location' => 'primary', 
-											//this is the important part, we tell it to use the nav walker we just wrote
-											'walker' => new ik_walker())
-										);
-				                   	?>	 
+				                   	<?php
+							            wp_nav_menu( array(
+							                'menu'              => 'top-nav',
+							                'theme_location'    => 'primary',
+							                'depth'             => 2,
+							                'container'         => 'div',
+							                'container_class'   => 'collapse navbar-collapse',
+							        'container_id'      => 'bs-example-navbar-collapse-1',
+							                'menu_class'        => 'nav navbar-nav',
+							                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							                'walker'            => new wp_bootstrap_navwalker())
+							            );
+							        ?>	 
 				                </div>
 				            </div>
 						</div>
